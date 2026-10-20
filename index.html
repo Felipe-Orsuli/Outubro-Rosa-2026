@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outubro Rosa - Prevenção e Conscientização</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rosa: {
+                            50: '#fdf2f8',
+                            100: '#fce7f3',
+                            200: '#fbcfe8',
+                            300: '#f472b6',
+                            400: '#e879f9',
+                            500: '#ec4899',
+                            600: '#db2777',
+                            700: '#be185d',
+                            800: '#9d174d',
+                            900: '#831843',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .bg-pink-gradient {
+            background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 50%, #f472b6 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 24px -10px rgba(219, 39, 119, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Cabeçalho / Navbar -->
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-rosa-100 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-rosa-100 rounded-full flex items-center justify-center text-rosa-600 shadow-inner">
+                    <i class="fa-solid font-bold fa-ribbon text-2xl"></i>
+                </div>
+                <span class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-rosa-600 to-rosa-800 bg-clip-text text-transparent">
+                    Outubro Rosa
+                </span>
+            </div>
+            <nav class="hidden md:flex space-x-6 font-medium text-slate-600">
+                <a href="#inicio" class="hover:text-rosa-600 transition">Início</a>
+                <a href="#guias" class="hover:text-rosa-600 transition">Guias Importantes</a>
+                <a href="#prevencao" class="hover:text-rosa-600 transition">Prevenção</a>
+            </nav>
+            <a href="#guias" class="bg-rosa-600 hover:bg-rosa-700 text-white font-medium px-4 py-2 rounded-full text-sm shadow-md transition transform active:scale-95">
+                Saiba Mais
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section / Introdução -->
+        <section id="inicio" class="bg-pink-gradient py-12 sm:py-20 px-4">
+            <div class="max-w-5xl mx-auto text-center">
+                <span class="inline-block bg-white/80 text-rosa-700 text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full mb-4 shadow-sm border border-rosa-200">
+                    <i class="fa-solid fa-heart text-rosa-500 mr-1"></i> Mês de Conscientização e Cuidado
+                </span>
+                <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+                    Um ato de amor com você mesma: <br class="hidden sm:inline"/> <span class="text-rosa-700">Previna-se contra o Câncer de Mama</span>
+                </h1>
+                <p class="text-base sm:text-lg text-slate-700 max-w-2xl mx-auto mb-8 font-light leading-relaxed">
+                    A informação é uma das nossas melhores ferramentas de proteção. O diagnóstico precoce aumenta significativamente as chances de cura. Cuide-se, faça seus exames regularmente e compartilhe o cuidado!
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#guias" class="bg-rosa-600 hover:bg-rosa-700 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition flex items-center">
+                        Acessar Guias Informativos <i class="fa-solid fa-arrow-down ml-2 text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Recursos / Cards Principais com Links Informativos -->
+        <section id="guias" class="py-16 px-4 max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">Recursos e Orientações Oficiais</h2>
+                <p class="text-slate-600 max-w-xl mx-auto text-sm sm:text-base">
+                    Acesse conteúdos detalhados e confiáveis do portal Câncer de Mama Brasil para esclarecer dúvidas frequentes.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Card 1: Doenças e Tratamentos -->
+                <div class="bg-white rounded-2xl p-6 sm:p-8 border border-rosa-100 shadow-sm card-hover flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute -top-6 -right-6 w-24 h-24 bg-rosa-50 rounded-full z-0 opacity-70"></div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 bg-rosa-100 text-rosa-600 rounded-xl flex items-center justify-center mb-6 text-2xl shadow-sm">
+                            <i class="fa-solid fa-stethoscope"></i>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mb-3">
+                            Entenda Doenças & Tratamentos
+                        </h3>
+                        <p class="text-slate-600 leading-relaxed text-sm sm:text-base mb-6">
+                            Conheça os diferentes tipos de alterações mamárias, os estágios do diagnóstico e quais são as opções modernas e seguras de tratamento disponíveis para a saúde feminina.
+                        </p>
+                    </div>
+                    <div class="relative z-10 pt-4 border-t border-slate-100">
+                        <a href="https://www.cancerdemamabrasil.com.br/doencas-e-tratamentos/" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="w-full inline-flex items-center justify-center bg-rosa-600 hover:bg-rosa-700 text-white font-semibold py-3 px-6 rounded-xl shadow transition group">
+                            <span>Saiba mais sobre tratamentos</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Como Funciona a Mamografia -->
+                <div class="bg-white rounded-2xl p-6 sm:p-8 border border-rosa-100 shadow-sm card-hover flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute -top-6 -right-6 w-24 h-24 bg-rosa-50 rounded-full z-0 opacity-70"></div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 bg-rosa-100 text-rosa-600 rounded-xl flex items-center justify-center mb-6 text-2xl shadow-sm">
+                            <i class="fa-solid fa-x-ray"></i>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mb-3">
+                            Como Funciona a Mamografia
+                        </h3>
+                        <p class="text-slate-600 leading-relaxed text-sm sm:text-base mb-6">
+                            A mamografia é o principal exame para identificar lesões ainda no início. Entenda como o procedimento é realizado, sua importância vital e desmistifique o exame.
+                        </p>
+                    </div>
+                    <div class="relative z-10 pt-4 border-t border-slate-100">
+                        <a href="https://www.cancerdemamabrasil.com.br/como-funciona-a-mamografia/" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="w-full inline-flex items-center justify-center bg-rosa-600 hover:bg-rosa-700 text-white font-semibold py-3 px-6 rounded-xl shadow transition group">
+                            <span>Descubra como funciona</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Dicas Rápidas de Prevenção -->
+        <section id="prevencao" class="bg-rosa-50/60 py-16 px-4 border-y border-rosa-100">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">Dicas de Prevenção e Autocuidado</h2>
+                    <p class="text-slate-600 max-w-xl mx-auto text-sm sm:text-base">
+                        Pequenas atitudes no seu dia a dia fazem toda a diferença para o seu bem-estar e saúde.
+                    </p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Dica 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-rosa-100 flex items-start space-x-4">
+                        <div class="text-rosa-500 text-2xl mt-1">
+                            <i class="fa-solid fa-apple-whole"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-1">Alimentação Saudável</h4>
+                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                                Mantendo uma dieta equilibrada com frutas, vegetais e alimentos naturais você fortalece o organismo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Dica 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-rosa-100 flex items-start space-x-4">
+                        <div class="text-rosa-500 text-2xl mt-1">
+                            <i class="fa-solid fa-person-walking"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-1">Atividade Física</h4>
+                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                                Praticar exercícios regularmente reduz o risco de diversas enfermidades e melhora a qualidade de vida.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Dica 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-rosa-100 flex items-start space-x-4">
+                        <div class="text-rosa-500 text-2xl mt-1">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-1">Consultas de Rotina</h4>
+                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                                Visite seu ginecologista ou mastologista ao menos uma vez ao ano para exames de acompanhamento.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-white border-t border-rosa-100 py-8 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex justify-center items-center space-x-2 text-rosa-600 text-xl font-bold mb-3">
+                <i class="fa-solid fa-ribbon"></i>
+                <span>Outubro Rosa</span>
+            </div>
+            <p class="text-slate-600 text-sm max-w-md mx-auto mb-4">
+                Toque-se, cuide-se e incentive as mulheres que você ama a realizarem seus exames. A prevenção é o melhor caminho!
+            </p>
+            <p class="text-xs text-slate-400">
+                Conteúdos e links de direcionamento oficiais disponibilizados via <strong>Câncer de Mama Brasil</strong>.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
